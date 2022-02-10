@@ -1,0 +1,36 @@
+.CooperativeEnterprise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 29vw auto 0;
+}
+.CooperativeEnterprise_top h1{
+    font-size: 1.2vw;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+}
+.CooperativeEnterprise_top p{
+    font-size: 2vw;
+    letter-spacing: 2px;
+    color: #999999;
+}
+
+.CooperativeEnterprise_wrap{
+    padding: 0 8vw;
+}
+.CooperativeEnterprise_wrap ul{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0 12vw;
+}
+.CooperativeEnterprise_wrap ul li{
+    width: 9vw;
+    margin: 1vw 2vw;
+}
+.CooperativeEnterprise_wrap ul li img{
+    width:100%;
+}

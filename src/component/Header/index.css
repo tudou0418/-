@@ -1,0 +1,47 @@
+header{
+    /* 固定定位 定位到页面最上方 */
+      position:fixed;
+      z-index:999;
+        width: 100%;
+        
+        
+}
+.nav_main{
+    height: 77px; 
+}
+.sticky{
+    height: 77px; 
+    background: #fff;
+    box-shadow:0px 10px 10px -4px #666666;
+    transition: all .5s ease-in-out;
+}
+
+.header_logo{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.6vw;
+    height: 4.5vw;
+
+}
+.header_nav {
+    float: left;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    height: 100%;
+}
+.header_logo img{
+    width: 9vw;
+    height: 2.2vw;
+    
+}
+.header_nav>li>a{
+    color: #666666;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding:0 29px;
+    text-decoration: none;
+}
+

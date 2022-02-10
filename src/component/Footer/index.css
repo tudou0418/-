@@ -1,0 +1,81 @@
+footer{
+    margin-top: 15vw;
+    background: url(../../assets/footer-bg.png) no-repeat;
+    /* 设置初始状态时背景图片在垂直方向上的位置, */
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+.footer_top{
+    text-align:center;
+}
+.footer_top h3{
+    font-size: 1.2vw;
+    color: #1a1a1a;
+    letter-spacing:2px;
+}
+.footer_top p{
+    font-size: 2vw;
+    color:  #999999;
+    letter-spacing: 2px;
+}
+
+.footer_wrap{
+    margin-top: 9vw;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+.footer_wrap_left {
+    width: 30vw;
+    margin-right: 10vw;
+}
+.footer_wrap_left h2{
+    font-size: 1.2vw;
+    font-weight: 900;
+    margin-bottom: 1.2vw;
+    letter-spacing: 2px;
+}
+.footer_wrap_left p{
+    font-size: 0.8vw;
+    /* 首行缩进 */
+    text-indent:1.9vw;
+    letter-spacing: 2px;
+    line-height: 1.5vw;
+    color:  #999999;
+}
+
+.footer_wrap_right{
+    width: 35vw;
+    margin-top: 7vw;
+}
+.footer_wrap_right li{
+    padding: 0.5vw 0;
+    display: flex;
+    align-items: center;
+}
+.footer_wrap_right li i{
+    font-size: 1.5vw;
+}
+.footer_wrap_right li span{
+    font-size: 1.5vw;
+    margin-left: 3.5vw;
+}
+.footer_wrap_right li p{
+    font-size: 1vw;
+    letter-spacing: 2px;
+    color: #333;
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 1.5vw;
+}
+
+.footer_bottom{
+    width: 100%;
+    text-align: right;
+    padding: 6vw 5vw 1vw;
+}
+.footer_bottom p{
+    font-size: 0.8vw;
+    color: #fff;
+}

@@ -1,0 +1,49 @@
+.EnvironmentalProduct{
+    position: relative;
+    width: calc(100% - 10vw);
+    background: sandybrown;
+    margin: 17vw auto 0;
+}
+.EnvironmentalProduct_top{
+    margin-left: 45vw;
+}
+.EnvironmentalProduct_top h1{
+    font-size: 4.17vw;
+    color: #333;
+    text-align: start;
+    padding-right: 1.5vw;
+    margin: 0 0 1.5vw;
+}
+.EnvironmentalProduct_top p{
+    /* margin-top: 0; */
+    font-size: 0.83vw;
+    color: #666;
+    letter-spacing: 2px;
+    line-height: 1.8vw;
+}
+
+.EnvironmentalProduct_top .arrowmark{
+    text-align: start;
+    margin-top: 1.3vw;
+}
+
+.EnvironmentalProduct_wrap{
+    position: relative;
+    height: 35vw;
+    margin-top: 10vw;
+}
+.EnvironmentalProduct_wrap ul li{
+    position: absolute;
+    width: 52.29vw;
+}
+.EnvironmentalProduct_wrap ul li img{
+ width: 100%;
+}
+.EnvironmentalProduct_wrap ul li:nth-child(1){
+    left: 7vw;
+    top: 10vw;
+}
+.EnvironmentalProduct_wrap ul li:nth-child(2){
+    right: 2vw;
+    top: -3vw;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="cs" onchange="handleChange()" checked="true">
+    <script>
+        handleChange = (event)=>{
+            const a = document.getElementById('cs')
+        console.log("a=="+a.checked)
+           console.log(event)
+        }
+        
+const  state = {
+        todos: [
+            {id:'001',name:'火锅',done:false},
+            {id:'002',name:'串串',done:true},
+            {id:'003',name:'干锅',done:false}
+        ]
+    }
+    const newdone = true
+    const {todos} = state
+    let num = 0
+    const newtodos = todos.map((todo)=>{
+        return {...todo,done:true}
+    }) 
+     this.state ={todos:newtodos}
+         console.log(newtodos)
+         
+  
+
+    // const gg = {id:'003',name:'干锅',done:false}
+    // console.log(...gg)
+
+    // const {todos} = state
+    // for(pp in todos){
+    //     console.log(todos[pp])
+    // }
+    // todos.map((item)=>{
+    //     console.log("item===",{...item})
+    // })
+
+// console.log("sss",...todos)
+    </script>
+</body>
+</html>

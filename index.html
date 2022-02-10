@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  /* 斜体文字不倾斜 */
+  em,i{
+    font-style: normal;
+  }
+  /* 取消li小圆点 */
+  li{
+    list-style: none;
+  }
+  img{
+    /* 照顾低版本浏览器 如果图片外面包含了链接会有边框等问题 */
+     border: 0;
+    /* 取消图片低侧由空白缝隙的问题 */
+    vertical-align: middle;
+  }
+
+  button{
+    /* 鼠标变成小手 */
+     cursor: pointer;
+  }
+
+  a{
+    color:#666;
+    text-decoration: none;
+  }
+
+    a:hover{
+      color: #c81623;
+    }
+
+    button.input{
+      font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",
+      sans-serif;
+    }
+    body{
+      /* 狂锯齿形 文字更加清晰 */
+      -webkit-font-smoothing:antialiased;
+      background-color: #fff;
+      font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",
+      sans-serif;
+       color: #666;
+    }
+    .hide.none {
+      display: none;
+    }
+    /* 清除浮动 */
+    .clearfix:after{
+      visibility: hidden;
+      clear: both;
+      display: block;
+      content: ".";
+      height: 0;
+
+    }
+    .clearfix{
+      *zoom:1;
+    }
+
+
+  .wrap{
+    width: 0px;
+height: 0px;
+border-width: 40px 40px 40px 40px;
+border-style: solid;
+border-color: bisque red salmon seagreen;
+  }
+  .data{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+.data::after{
+  position: absolute;
+  content: "\e91e";
+  display: none;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  color:red;
+}
+.data:hover::after{
+  display: inline-block;
+}
+</style>
+
+<body>
+  <div class="data"></div>
+    <div class="wrap">
+      </div>
+      <video src="" muted="muted" width="500px"  controls="controls">
+      </video>
+      <form action="">
+        <input type="date"/>
+        <input type="email">
+        <input type="submit" value="提交">
+      </form>
+   
+</body>
+</html>

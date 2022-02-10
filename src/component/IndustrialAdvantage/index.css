@@ -1,0 +1,80 @@
+.IndustrialAdvantage{
+    position: relative;
+    top: -8vw;
+    width: calc(100% - 26vw);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0vw 2.133vw 3.067vw 0vw rgb(117,117,117);
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff
+}
+.IndustrialAdvantage_wrap{
+    width: 95%;
+    margin: 2vw auto;
+}
+.IndustrialAdvantage_top{
+    text-align: center;
+    padding-bottom: 2.4vw;
+}
+.IndustrialAdvantage_top h3{
+    font-size:1.2vw;
+    font-weight: 800;
+    /* 文字间距 */
+    letter-spacing:2px;
+    color: #1a1a1a;
+}
+
+.IndustrialAdvantage_top p{
+    font-size:2vw;
+    color: #999999;
+}
+.IndustrialAdvantage ul{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding-bottom: 2.3vw;
+}
+.IndustrialAdvantage ul li{
+    width: 15vw;
+    background-color: #fff;
+    padding: 2.5vw 1.8vw 3.5vw;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.IndustrialAdvantage ul li:hover{
+    background-color: #3629cd;
+}
+.IndustrialAdvantage_bottom p{
+    color: #979797;
+    font-size: 16px;
+    margin: 1vw auto;
+}
+.IndustrialAdvantage_bottom ul li:hover h3,p{
+    color: #fff;
+}
+
+.IndustrialAdvantage ul h3{
+    font-weight: 800;
+}
+
+.IndustrialAdvantage ul li img{
+    width: 4vw;
+    height: 4.1vw;
+    text-align: center;
+    margin: 1vw auto;
+}
+
+.IndustrialAdvantage_flotage17{
+    position: absolute;
+    top: -5vw;
+    left: -4vw;
+    animation: flotage17 3.7s infinite ease-in-out;
+}
+
+@keyframes flotage17{
+    50%{
+        transform: translateY(-25px);
+    }
+}

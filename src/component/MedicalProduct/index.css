@@ -1,0 +1,82 @@
+.MedicalProduct{
+    position: relative;
+    top: -8vw;
+    width: calc(100% - 26vw);
+    display: flex;
+    flex-direction: column;
+    margin: 20vw auto 0;
+
+}
+.MedicalProduct_top h1{
+    font-size: 4.17vw;
+    color: #333;
+    padding-left: 4vw;
+    margin: 3vw auto;
+}
+.MedicalProduct_top p{
+    font-size: 0.83vw;
+    color: #666;
+    padding-left: 4vw;
+    padding-right: 10vw;
+    /* 间距 */
+    letter-spacing:2px;
+    /* 行高 */
+    line-height: 1.8vw;
+}
+.down{
+    padding: 3vw 4vw;
+}
+.down_circle{
+    height: 3vw;
+    width: 3vw;
+    background-color: #2618ca;
+    border-radius: 50%;
+    position: relative;
+    
+}
+.down_triangle{
+    position: absolute;
+    top: 0.9vw;
+    left: 0.6vw;
+    height: 0vw;
+    width: 0vw;
+    border: 0.8vw solid transparent;
+    border-top: 1.2vw solid #fff;
+
+}
+.MedicalProduct_wrap{
+    margin-top: 15vw;
+}
+.MedicalProduct_wrap ul{
+    display: flex;
+    justify-content: space-around;
+}
+.MedicalProduct_wrap ul li{
+    width: 19.53vw;
+    height: 34.69vw;
+    background-color: bisque;
+    /* visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-name: fadeInDown; */
+ 
+}
+.MedicalProduct_wrap ul li img{
+    width: 100%; 
+    
+}
+.MedicalProduct_wrap ul li:nth-child(2){
+    margin-top: -15vw;
+}
+.MedicalProduct_wrap ul li:nth-child(3){
+       /* 内容会被修剪，浏览器会显示滚动条以便查看其余内容 */
+    overflow-y: scroll;       
+}
+.MedicalProduct_line1{
+    position: absolute;
+    top: 51vw;
+    left: 26vw;
+    width: 40vw;
+    z-index: -99;
+}
+

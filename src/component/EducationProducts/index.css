@@ -1,0 +1,88 @@
+.EducationProducts{
+    position: relative;
+    width: 100%;
+}
+.EducationProducts_top{
+    width: calc(100% - 2.6vw);
+    margin: 15.5vw auto 0;
+    padding: 0 0 10vw 8vw;
+}
+.EducationProducts_top h1{
+    font-size: 4.17vw;
+    /* color: #fff; */
+    padding-left: 11vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+.EducationProducts_top p{
+    /* margin-top: 0; */
+    padding-left: 11vw;
+    padding-right: 15vw;
+    font-size: 0.83vw;
+    color: #666;
+    letter-spacing: 2px;
+    line-height: 1.8vw;
+}
+
+.EducationProducts_wrap{
+    width: 99vw;
+    position: relative;
+}
+
+.EducationProducts_wrap li{
+    width: 19.53vw;
+    height: 34.69vw;
+    margin: 0 1.5vw;
+    box-shadow: 0vw 3vw 5vw 0vw rgb(205 205 205 / 35%);
+}
+.EducationProducts_wrap li img{
+    width: 100%;
+}
+.EducationProducts_wrap_left{
+    padding-bottom: 30vw;
+    margin-left: 18.5vw;
+    display: flex;
+}
+
+.EducationProducts_wrap_left li:nth-child(1){
+    margin-top: 26vw;
+    overflow-y: scroll;
+}
+.EducationProducts_wrap_left li:nth-child(2){
+    margin-top: 13vw;
+}
+.EducationProducts_wrap_right{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 16vw;
+    right: 0vw;
+}
+
+.EducationProducts_wrap_right li:nth-child(1){
+    width: 7.53vw;
+    background: url(../../assets/education-bg7.png) no-repeat;
+}
+.EducationProducts_wrap_right li:nth-child(2){
+    margin-top: 24vw;
+
+}
+.EducationProducts_wrap_right li:nth-child(3){
+    margin-top: 36vw;
+    overflow-y: scroll;
+}
+
+/* 背景图片 */
+.EducationProducts_bg{
+    width: 37.5vw;
+    top: -8.5vw;
+    left: 4.5vw;
+    z-index: -999;
+}
+
+.EducationProducts_line{
+    bottom: -14vw;
+    left: 10vw;
+    width: 45vw;
+    z-index: -99;
+}
