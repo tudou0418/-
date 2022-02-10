@@ -5,6 +5,7 @@ import MedicalProduct from '../MedicalProduct';
 import EducationProducts from '../EducationProducts';
 import EnvironmentalProduct from '../EnvironmentalProduct';
 import CooperativeEnterprise from '../CooperativeEnterprise';
+import Progress from '../Progress';
 import shape_bg1 from '../../assets/shape-bg-1x.png';
 import shape_bg2  from '../../assets/shape-bg-2x.png';
 import shape_bg3  from '../../assets/shape-bg-3x.png';
@@ -23,6 +24,34 @@ import wrap1_shapes5  from '../../assets/wrap1_shapes5.png';
 import './index.css'
 
 export default class Container extends Component {
+
+
+    handleBackTop = () =>{
+       const scrollHight = window.scrollY;
+       const backTop = document.getElementsByClassName('backTop')
+       if(scrollHight>50){
+        backTop[0].style.opacity=1
+       }else{
+        backTop[0].style.opacity=0
+       } 
+        
+    }
+
+    
+    // 跳转顶部
+    toTop = () => {
+        const dom = document.getElementsByClassName('slogan')
+        if (dom) {
+            // scrollIntoView()方法会滚动元素的父容器，使被调用scrollIntoView()的元素对用户可见
+            dom[0].scrollIntoView({ behavior: 'smooth', block: 'end' })
+        }
+      }
+
+    componentDidMount(){
+        //监听滚动事件
+       window.addEventListener("scroll",this.handleBackTop)
+    }
+
     render() {
         const title = '“互联网\n+\n智慧行业解决方案”'
 
@@ -63,6 +92,11 @@ export default class Container extends Component {
                 <EnvironmentalProduct/>
                 {/* 合作企业 */}
                 <CooperativeEnterprise/>
+                {/* 测试
+                <Progress/> */}
+                <div className='backTop' onClick={this.toTop}>
+                    <i className='iconfont icon-31huidaodingbu'></i>
+                </div>
                 </div>
         )
     }

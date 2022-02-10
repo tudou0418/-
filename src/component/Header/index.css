@@ -42,6 +42,7 @@ header{
     font-size: 1.1vw;
     font-weight: 600;
     padding:0 29px;
+    cursor: pointer;
     text-decoration: none;
 }
 

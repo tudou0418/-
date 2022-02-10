@@ -13,7 +13,42 @@ import business_11  from '../../assets/business-11.png';
 import business_12  from '../../assets/business-12.png';
 import './index.css'
 export default class index extends Component {
+    state ={
+        isRotate : 0
+    }
+    handleScroll = () =>{
+        //拿到视高
+       const clientHeight =  document.documentElement.clientHeight
+       //拿到滚动高度
+       const scrollHight = window.scrollY;
+       this.setState({isRotate:scrollHight > 593 ? 1:0})
+    }
+    componentDidMount(){
+        //监听滚动事件
+       window.addEventListener("scroll",this.handleScroll)
+    }
+    addClassName = ()=>{
+        const business = document.getElementsByClassName('business')
+        const listLi = business[0].getElementsByTagName('li')
+        for(let i = 0 ;i< 3;i++){
+             listLi[i].className='flip'
+        }
+        for(let i = 3 ;i< 6;i++){
+            listLi[i].className='flip1'
+        }
+       for(let i = 6 ;i< 9;i++){
+        listLi[i].className='flip2'
+        }
+        for(let i = 9 ;i< 12;i++){
+            listLi[i].className='flip3'
+        }
+    }
+
   render() {
+    //   console.log(window.scrollY)
+      if(this.state.isRotate === 1){
+        this.addClassName()
+      }
     return (
         // 业务范围
         <section>

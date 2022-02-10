@@ -1,7 +1,6 @@
 .EnvironmentalProduct{
     position: relative;
     width: calc(100% - 10vw);
-    background: sandybrown;
     margin: 17vw auto 0;
 }
 .EnvironmentalProduct_top{

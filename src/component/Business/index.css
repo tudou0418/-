@@ -21,6 +21,16 @@
     flex-flow: row wrap;
     margin: 0 auto;
 }
+@keyframes flipInX{
+    from{
+        visibility: hidden;
+        transform: rotateX(-60deg);
+    }
+    to{
+        visibility: visible;
+        transform: rotateX(0deg);
+    }
+}
 .business li{
    width: 11vw;
    height: 5.5vw;
@@ -28,6 +38,25 @@
    color: #fff;
    font-size: 18px;
    text-align: center;
+}
+.flip{
+    animation-name:flipInX;
+    animation-duration: 2s;
+}
+.flip1{
+    animation-name:flipInX;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+}
+.flip2{
+    animation-name:flipInX;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+}
+.flip3{
+    animation-name:flipInX;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
 }
 .business li img{
    padding-bottom: 1vw;

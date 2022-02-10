@@ -16,7 +16,19 @@ export default class Header extends Component {
        this.setState({isChangeStyle:scrollHight > 30? 1:0})
     }
 
+    // 跳转到业务范围
+    toBusiness = () => {
+
+        const dom = document.getElementsByClassName('lineOfBusiness')
+        if (dom) {
+            // scrollIntoView()方法会滚动元素的父容器，使被调用scrollIntoView()的元素对用户可见
+            dom[0].scrollIntoView({ behavior: 'smooth', block: 'end' })
+        }
+      }
+      
+
     componentDidMount(){
+        //监听滚动事件
        window.addEventListener("scroll",this.handleScroll)
     }
 //  <nav className={`${isChangeStyle} === 1?'nav_main':'nav_main'}`}>
@@ -29,7 +41,7 @@ export default class Header extends Component {
                         <img src={imgURL}/>
                     </a>
                 <ul className='header_nav'>
-                    <li><a>首页</a></li>
+                    <li><a onClick={this.toBusiness}>首页</a></li>
                     <li><a>业务范围</a></li>
                     <li><a>行业优势</a></li>
                     <li><a>案例展示</a></li>
